@@ -1,0 +1,56 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 8%;
+    --foreground: 0 0% 100%;
+    --card: 220 15% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 15% 8%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 226 91% 61%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 70%;
+    --accent: 196 100% 63%;
+    --accent-foreground: 220 15% 8%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 226 91% 61%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.glass-panel {
+  @apply bg-card/50 backdrop-blur-md border border-white/10;
+}

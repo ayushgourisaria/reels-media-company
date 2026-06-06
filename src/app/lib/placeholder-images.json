@@ -1,0 +1,29 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-video",
+      "description": "Dynamic social media content creation",
+      "imageUrl": "https://picsum.photos/seed/reels1/1200/800",
+      "imageHint": "social media video production"
+    },
+    {
+      "id": "blueprint-1",
+      "description": "Strategy session",
+      "imageUrl": "https://picsum.photos/seed/reels2/600/400",
+      "imageHint": "digital marketing strategy"
+    },
+    {
+      "id": "blueprint-2",
+      "description": "Content production",
+      "imageUrl": "https://picsum.photos/seed/reels3/600/400",
+      "imageHint": "video editing studio"
+    },
+    {
+      "id": "blueprint-3",
+      "description": "Automation workflow",
+      "imageUrl": "https://picsum.photos/seed/reels4/600/400",
+      "imageHint": "software automation dashboard"
+    }
+  ]
+}
